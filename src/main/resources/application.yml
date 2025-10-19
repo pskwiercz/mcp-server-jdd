@@ -1,0 +1,19 @@
+spring:
+  ai:
+    mcp:
+      server:
+        name: task-mcp-server
+        version: 1.0.0
+
+  jpa:
+    database-platform: H2
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
+
+server:
+  port: 8060
