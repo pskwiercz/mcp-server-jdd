@@ -13,10 +13,4 @@ public class McpServerJddApplication {
         SpringApplication.run(McpServerJddApplication.class, args);
     }
 
-    @Bean
-    public ToolCallbackProvider tools(TaskTools taskTools) {
-        return MethodToolCallbackProvider.builder()
-                .toolObjects(taskTools)
-                .build();
-    }
 }
